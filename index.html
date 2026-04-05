@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneSphere Technologies — Where Problems Become Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://unpkg.com/feather-icons"></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ████ NAV ████ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-sphere"></div>
+      OneSphere Technologies
+    </a>
+    <ul class="nav-links">
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#deployment">Process</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#submit" class="nav-cta">Submit an Idea</a></li>
+    </ul>
+    <button class="mob-toggle"
+      onclick="document.getElementById('mob-menu').style.display=document.getElementById('mob-menu').style.display==='none'||!document.getElementById('mob-menu').style.display?'block':'none'">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div id="mob-menu">
+    <ul>
+      <li><a href="#mission" onclick="this.closest('#mob-menu').style.display='none'">Mission</a></li>
+      <li><a href="#capabilities" onclick="this.closest('#mob-menu').style.display='none'">Capabilities</a></li>
+      <li><a href="#products" onclick="this.closest('#mob-menu').style.display='none'">Products</a></li>
+      <li><a href="#deployment" onclick="this.closest('#mob-menu').style.display='none'">Process</a></li>
+      <li><a href="#pricing" onclick="this.closest('#mob-menu').style.display='none'">Pricing</a></li>
+      <li><a href="#submit" class="mob-cta" onclick="this.closest('#mob-menu').style.display='none'">Submit an Idea</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- ████ HERO ████ -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-blob hb1"></div>
+    <div class="hero-blob hb2"></div>
+    <div class="hero-blob hb3"></div>
+
+    <div class="hero-badge"><span class="badge-pulse"></span>Building the future, one solution at a time</div>
+
+    <h1 class="h-display hero-h1">
+      We build reliable software<br>that <em>solves real problems</em>
+    </h1>
+
+    <p class="sub hero-sub">
+      Custom systems. Scalable products. Purpose-driven engineering —
+      for every industry, every scale, every ambition.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#submit" class="btn btn-dark">Request a Solution →</a>
+      <a href="#products" class="btn btn-ghost">Explore Our Work</a>
+    </div>
+
+    <div class="hero-stats-row">
+      <div class="hero-stat">
+        <div class="stat-n">12+</div>
+        <div class="stat-l">Industries Served</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-n">6</div>
+        <div class="stat-l">Live Products</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-n">100%</div>
+        <div class="stat-l">Purpose-Built</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-n">48h</div>
+        <div class="stat-l">Response Time</div>
+      </div>
+    </div>
+
+    <div class="hero-trusted">
+      <div class="trusted-lbl">Trusted by teams across industries</div>
+      <div class="trusted-logos">
+        <div class="t-logo">HealthFirst Clinic</div>
+        <div class="t-logo">NexGen Logistics</div>
+        <div class="t-logo">GreenField Farms</div>
+        <div class="t-logo">UrbanRetail Co.</div>
+        <div class="t-logo">EduBridge Academy</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ████ MISSION ████ -->
+  <section id="mission">
+    <div class="container">
+      <div class="mission-grid">
+
+        <div class="mission-visual reveal">
+          <svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#C2D8F0" />
+                <stop offset="100%" stop-color="#DFF0E8" />
+              </linearGradient>
+              <linearGradient id="grassG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#72BB70" />
+                <stop offset="100%" stop-color="#55A050" />
+              </linearGradient>
+              <linearGradient id="bldG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#EEF2F8" />
+                <stop offset="100%" stop-color="#D4DEEC" />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="b" />
+                <feMerge>
+                  <feMergeNode in="b" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <rect width="600" height="450" fill="url(#skyG)" />
+            <!-- Sun -->
+            <circle cx="522" cy="74" r="52" fill="#FFE082" opacity=".45" filter="url(#glow)" />
+            <circle cx="522" cy="74" r="36" fill="#FFCA28" opacity=".72" />
+            <circle cx="522" cy="74" r="26" fill="#FFD54F" />
+            <!-- Clouds -->
+            <g opacity=".82">
+              <ellipse cx="102" cy="90" rx="58" ry="20" fill="white" />
+              <ellipse cx="132" cy="78" rx="44" ry="17" fill="white" />
+              <ellipse cx="72" cy="85" rx="36" ry="14" fill="white" />
+            </g>
+            <g opacity=".65">
+              <ellipse cx="352" cy="66" rx="48" ry="17" fill="white" />
+              <ellipse cx="380" cy="55" rx="36" ry="14" fill="white" />
+            </g>
+            <!-- Ground -->
+            <rect x="0" y="316" width="600" height="134" fill="url(#grassG)" />
+            <ellipse cx="162" cy="316" rx="200" ry="27" fill="#80C47C" />
+            <ellipse cx="452" cy="319" rx="174" ry="23" fill="#74B870" />
+            <!-- Road/path -->
+            <rect x="275" y="317" width="50" height="133" fill="#C8BBA8" />
+            <rect x="297" y="322" width="8" height="13" fill="#BAAD9A" rx="1" />
+            <rect x="297" y="343" width="8" height="13" fill="#BAAD9A" rx="1" />
+            <rect x="297" y="364" width="8" height="13" fill="#BAAD9A" rx="1" />
+            <!-- Left building -->
+            <rect x="28" y="207" width="68" height="112" fill="url(#bldG)" rx="4" />
+            <rect x="36" y="220" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="54" y="220" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="72" y="220" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="36" y="241" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="54" y="241" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="72" y="241" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="36" y="262" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="54" y="262" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="72" y="262" width="12" height="13" fill="#A8C8E0" rx="2" />
+            <rect x="44" y="288" width="36" height="31" fill="#90B8CC" rx="3" />
+            <!-- Tree L -->
+            <rect x="108" y="270" width="11" height="50" fill="#7A5A38" />
+            <ellipse cx="113" cy="253" rx="30" ry="31" fill="#4FA84C" />
+            <ellipse cx="100" cy="265" rx="22" ry="21" fill="#5CBB59" />
+            <ellipse cx="126" cy="261" rx="22" ry="23" fill="#4FA84C" />
+            <!-- Central Hub -->
+            <rect x="216" y="159" width="168" height="158" fill="#E8EEF6" rx="6" />
+            <rect x="226" y="175" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="252" y="175" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="278" y="175" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="304" y="175" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="226" y="201" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="252" y="201" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="278" y="201" width="18" height="18" fill="#B8D4E8" rx="2" />
+            <rect x="304" y="201" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="226" y="227" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="252" y="227" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="304" y="227" width="18" height="18" fill="#A0C0D8" rx="2" />
+            <rect x="273" y="273" width="54" height="44" fill="#88B4CC" rx="4" />
+            <circle cx="321" cy="296" r="4" fill="#5A90A8" />
+            <polygon points="208,159 300,105 392,159" fill="#C4D4E8" />
+            <line x1="300" y1="105" x2="300" y2="81" stroke="#7A9AB4" stroke-width="3" />
+            <circle cx="300" cy="77" r="10" fill="#1A6B4A" opacity=".9" filter="url(#glow)" />
+            <rect x="249" y="259" width="102" height="14" fill="#1A6B4A" rx="3" opacity=".8" />
+            <!-- Right building -->
+            <rect x="445" y="223" width="70" height="96" fill="#EDF1F6" rx="4" />
+            <rect x="452" y="235" width="11" height="12" fill="#B0CCDF" rx="2" />
+            <rect x="469" y="235" width="11" height="12" fill="#B0CCDF" rx="2" />
+            <rect x="486" y="235" width="11" height="12" fill="#B0CCDF" rx="2" />
+            <rect x="452" y="255" width="11" height="12" fill="#B0CCDF" rx="2" />
+            <rect x="469" y="255" width="11" height="12" fill="#B0CCDF" rx="2" />
+            <rect x="486" y="255" width="11" height="12" fill="#B0CCDF" rx="2" />
+            <rect x="466" y="279" width="32" height="40" fill="#90B8CA" rx="3" />
+            <!-- Tree R -->
+            <rect x="540" y="273" width="10" height="46" fill="#7A5A38" />
+            <ellipse cx="545" cy="257" rx="26" ry="27" fill="#4AAA47" />
+            <ellipse cx="533" cy="269" rx="19" ry="18" fill="#55B852" />
+            <ellipse cx="557" cy="265" rx="19" ry="21" fill="#4AAA47" />
+            <!-- Person 1 — green top, waving -->
+            <circle cx="194" cy="291" r="15" fill="#FDBCB4" />
+            <path d="M179 291 Q194 277 209 291" fill="#4A3020" />
+            <rect x="180" y="306" width="28" height="29" fill="#2D9B6A" rx="5" />
+            <rect x="182" y="335" width="10" height="19" fill="#5C6BC0" rx="3" />
+            <rect x="196" y="335" width="10" height="19" fill="#5C6BC0" rx="3" />
+            <path d="M180 313 Q166 301 158 293" stroke="#2D9B6A" stroke-width="8" stroke-linecap="round" fill="none" />
+            <circle cx="156" cy="292" r="6" fill="#FDBCB4" />
+            <!-- Person 2 — child center -->
+            <circle cx="300" cy="299" r="12" fill="#F5CBA7" />
+            <path d="M288 299 Q300 287 312 299" fill="#2A1A0A" />
+            <rect x="288" y="311" width="24" height="21" fill="#E05050" rx="4" />
+            <rect x="290" y="332" width="9" height="15" fill="#7986CB" rx="3" />
+            <rect x="301" y="332" width="9" height="15" fill="#7986CB" rx="3" />
+            <!-- Person 3 — blue top, waving -->
+            <circle cx="408" cy="288" r="15" fill="#F0C8A0" />
+            <path d="M393 288 Q408 275 423 288" fill="#1A120A" />
+            <rect x="394" y="303" width="28" height="29" fill="#1B4F8A" rx="5" />
+            <rect x="396" y="332" width="10" height="19" fill="#37474F" rx="3" />
+            <rect x="410" y="332" width="10" height="19" fill="#37474F" rx="3" />
+            <path d="M422 310 Q436 299 445 292" stroke="#1B4F8A" stroke-width="8" stroke-linecap="round" fill="none" />
+            <circle cx="447" cy="291" r="6" fill="#F0C8A0" />
+            <!-- Connection lines -->
+            <path d="M209 293 Q252 271 288 301" stroke="#1A6B4A" stroke-width="1.5" stroke-dasharray="5,4" fill="none"
+              opacity=".4" />
+            <path d="M312 301 Q350 273 394 291" stroke="#1B4F8A" stroke-width="1.5" stroke-dasharray="5,4" fill="none"
+              opacity=".4" />
+            <!-- Tech nodes -->
+            <circle cx="194" cy="261" r="5" fill="#1A6B4A" opacity=".55" filter="url(#glow)" />
+            <circle cx="300" cy="255" r="6" fill="#1B4F8A" opacity=".5" filter="url(#glow)" />
+            <circle cx="408" cy="259" r="5" fill="#C4783A" opacity=".55" filter="url(#glow)" />
+            <line x1="199" y1="261" x2="294" y2="257" stroke="#1A6B4A" stroke-width="1.2" opacity=".3" />
+            <line x1="306" y1="257" x2="403" y2="261" stroke="#1B4F8A" stroke-width="1.2" opacity=".3" />
+            <!-- UI Cards -->
+            <rect x="60" y="148" width="80" height="42" fill="white" rx="8" opacity=".88" filter="url(#glow)" />
+            <rect x="68" y="159" width="40" height="5" fill="#D0D8E4" rx="3" />
+            <rect x="68" y="169" width="60" height="4" fill="#E0E4EA" rx="3" />
+            <rect x="68" y="177" width="50" height="4" fill="#E0E4EA" rx="3" />
+            <circle cx="126" cy="164" r="7" fill="#1A6B4A" opacity=".75" />
+            <rect x="462" y="155" width="80" height="42" fill="white" rx="8" opacity=".88" filter="url(#glow)" />
+            <rect x="470" y="166" width="40" height="5" fill="#D0D8E4" rx="3" />
+            <rect x="470" y="176" width="60" height="4" fill="#E0E4EA" rx="3" />
+            <rect x="470" y="184" width="50" height="4" fill="#E0E4EA" rx="3" />
+            <circle cx="518" cy="171" r="7" fill="#1B4F8A" opacity=".75" />
+          </svg>
+        </div>
+
+        <div class="mission-content reveal">
+          <span class="label">// Our Mission</span>
+          <h2 class="h-section">Technology that brings people closer to solutions</h2>
+          <p class="sub">We exist to bridge the gap between a problem and its solution — building software simple enough
+            for anyone, yet powerful enough to transform entire industries.</p>
+          <div class="pillars">
+            <div class="pillar">
+              <div class="p-ico" style="background:var(--green-pale)"><i data-feather="crosshair"></i></div>
+              <div class="p-text">
+                <h4>Purpose-Driven Development</h4>
+                <p>Every feature traces back to a real need — no bloat, no excess, no waste.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="p-ico" style="background:var(--blue-pale)"><i data-feather="globe"></i></div>
+              <div class="p-text">
+                <h4>Built for Every Industry</h4>
+                <p>Agriculture to fintech, healthcare to retail — our systems adapt to your world.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="p-ico" style="background:var(--amber-pale)"><i data-feather="zap"></i></div>
+              <div class="p-text">
+                <h4>Simple. Reliable. Fast.</h4>
+                <p>Performance and clarity are never opposites — we engineer both, always.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="p-ico" style="background:var(--violet-pale)"><i data-feather="users"></i></div>
+              <div class="p-text">
+                <h4>Community-Centred Innovation</h4>
+                <p>Your ideas shape our roadmap. Everyone who contributes is recognised.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ████ CAPABILITIES ████ -->
+  <section id="capabilities">
+    <div class="container">
+      <div class="cap-hdr reveal">
+        <span class="label">// Capabilities</span>
+        <h2 class="h-section" style="margin-top:14px">What we do best</h2>
+        <p class="sub">Six core disciplines powering everything we build — from a focused utility to a full enterprise
+          platform.</p>
+      </div>
+      <div class="cap-grid">
+        <div class="cap-card reveal">
+          <div class="cap-bar bg"></div>
+          <div class="cap-icon" style="background:var(--green-pale)"><i data-feather="tool"></i></div>
+          <h3 class="h-card">Custom Software Development</h3>
+          <p>Bespoke systems shaped around your exact workflow. No off-the-shelf compromises — every feature earns its
+            place.</p>
+        </div>
+        <div class="cap-card reveal">
+          <div class="cap-bar bb"></div>
+          <div class="cap-icon" style="background:var(--blue-pale)"><i data-feather="globe"></i></div>
+          <h3 class="h-card">Cross-Industry Solutions</h3>
+          <p>We've engineered for healthcare, logistics, education, agriculture, finance, and retail. Domain expertise
+            meets technical depth.</p>
+        </div>
+        <div class="cap-card reveal">
+          <div class="cap-bar ba"></div>
+          <div class="cap-icon" style="background:var(--amber-pale)"><i data-feather="zap"></i></div>
+          <h3 class="h-card">High-Performance Systems</h3>
+          <p>Speed and reliability aren't optional. Our architectures are optimised from day one for real production
+            loads.</p>
+        </div>
+        <div class="cap-card reveal">
+          <div class="cap-bar bv"></div>
+          <div class="cap-icon" style="background:var(--violet-pale)"><i data-feather="star"></i></div>
+          <h3 class="h-card">Minimal &amp; Efficient Design</h3>
+          <p>We strip away the unnecessary. Clean, purposeful interfaces that make complex systems feel effortless to
+            operate.</p>
+        </div>
+        <div class="cap-card reveal">
+          <div class="cap-bar bt"></div>
+          <div class="cap-icon" style="background:#E6F7F5"><i data-feather="layers"></i></div>
+          <h3 class="h-card">Scalable Architecture</h3>
+          <p>Start small, grow without rebuilding. Our foundations are designed to scale elastically alongside your
+            ambitions.</p>
+        </div>
+        <div class="cap-card reveal">
+          <div class="cap-bar br"></div>
+          <div class="cap-icon" style="background:#FEF0F0"><i data-feather="cpu"></i></div>
+          <h3 class="h-card">Problem-Driven Engineering</h3>
+          <p>We don't build features — we solve problems. Every technical decision traces back to the original
+            challenge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="background:rgba(248,245,240,.07)"></div>
+
+  <!-- ████ PRODUCTS ████ -->
+  <section id="products">
+    <div class="container">
+      <div class="prod-hdr reveal">
+        <span class="label">// Product Ecosystem</span>
+        <h2 class="h-section">Our systems &amp; software</h2>
+        <p class="sub">Live platforms, active beta projects, and what's on the horizon — all born from real-world
+          problems.</p>
+      </div>
+
+      <div class="prod-tabs">
+        <button class="prod-tab active" onclick="filterProds('all',this)">All Products</button>
+        <button class="prod-tab" onclick="filterProds('live',this)"><i data-feather="circle"
+            class="prod-tab-ico prod-tab-ico--live"></i>Live</button>
+        <button class="prod-tab" onclick="filterProds('beta',this)"><i data-feather="circle"
+            class="prod-tab-ico prod-tab-ico--beta"></i>Beta</button>
+        <button class="prod-tab" onclick="filterProds('soon',this)"><i data-feather="circle"
+            class="prod-tab-ico prod-tab-ico--soon"></i>Coming Soon</button>
+      </div>
+
+      <div class="prod-grid" id="prod-grid">
+        <!-- LIVE -->
+        <div class="prod-card wide reveal" data-status="live">
+          <span class="p-status s-live"><span class="s-dot"></span>Live</span>
+          <span class="p-emoji"><i data-feather="folder"></i></span>
+          <h3>SphereDesk — Business Operations Suite</h3>
+          <p>A unified dashboard for small and mid-size businesses to manage tasks, clients, invoicing, and team
+            workflows in one clean interface. Replaces five fragmented tools with a single reliable system.</p>
+          <div class="p-preview">
+            <div class="p-prev-inner">
+              <div class="p-dots"><span></span><span style="background:rgba(92,224,160,.4)"></span><span
+                  style="background:rgba(240,168,101,.35)"></span></div>
+              app.spheredesk.io — Live Dashboard
+            </div>
+          </div>
+          <div class="p-tags"><span class="p-tag">Web App</span><span class="p-tag">SaaS</span><span
+              class="p-tag">Multi-tenant</span></div>
+          <a class="p-link" href="#contact">Visit platform <span>→</span></a>
+        </div>
+
+        <div class="prod-card reveal" data-status="live">
+          <span class="p-status s-live"><span class="s-dot"></span>Live</span>
+          <span class="p-emoji"><i data-feather="map-pin"></i></span>
+          <h3>FieldTrack — Field Operations Manager</h3>
+          <p>Real-time job scheduling, route optimisation, and reporting for field-service businesses. Offline-first,
+            mobile-ready, GPS-integrated.</p>
+          <div class="p-tags"><span class="p-tag">Mobile</span><span class="p-tag">Offline-capable</span><span
+              class="p-tag">GPS</span></div>
+          <a class="p-link" href="#contact">Learn more <span>→</span></a>
+        </div>
+
+        <!-- BETA -->
+        <div class="prod-card reveal" data-status="beta">
+          <span class="p-status s-beta"><span class="s-dot"></span>Beta</span>
+          <span class="p-emoji"><i data-feather="heart"></i></span>
+          <h3>CareLink — Patient Management System</h3>
+          <p>Clinic and hospital-grade patient intake, records, appointment scheduling, and billing — designed with
+            practitioners, built for care.</p>
+          <div class="p-tags"><span class="p-tag">Healthcare</span><span class="p-tag">Web + Mobile</span></div>
+          <a class="p-link" href="#submit">Join beta <span>→</span></a>
+        </div>
+
+        <div class="prod-card reveal" data-status="beta">
+          <span class="p-status s-beta"><span class="s-dot"></span>Beta</span>
+          <span class="p-emoji"><i data-feather="shopping-cart"></i></span>
+          <h3>MarketSphere — Local Commerce Platform</h3>
+          <p>Lightweight e-commerce and inventory for local vendors and community markets. Simple enough for anyone to
+            operate from day one.</p>
+          <div class="p-tags"><span class="p-tag">Commerce</span><span class="p-tag">Inventory</span><span
+              class="p-tag">Local-first</span></div>
+          <a class="p-link" href="#submit">Join beta <span>→</span></a>
+        </div>
+
+        <!-- COMING SOON -->
+        <div class="prod-card reveal" data-status="soon">
+          <span class="p-status s-soon"><span class="s-dot"></span>Coming Soon</span>
+          <span class="p-emoji"><i data-feather="book-open"></i></span>
+          <h3>EduPath — Adaptive Learning Platform</h3>
+          <p>Personalised curriculum delivery and progress tracking for schools, tutors, and independent learners across
+            all age groups.</p>
+          <div class="p-tags"><span class="p-tag">Education</span><span class="p-tag">Q3 2026</span></div>
+        </div>
+
+        <div class="prod-card reveal" data-status="soon">
+          <span class="p-status s-soon"><span class="s-dot"></span>Coming Soon</span>
+          <span class="p-emoji"><i data-feather="tool"></i></span>
+          <h3>BuildFlow — Construction Project OS</h3>
+          <p>End-to-end project management, materials tracking, contractor coordination, and compliance logs for the
+            construction industry.</p>
+          <div class="p-tags"><span class="p-tag">Construction</span><span class="p-tag">Q4 2026</span></div>
+        </div>
+
+        <div class="prod-card reveal" data-status="soon">
+          <span class="p-status s-soon"><span class="s-dot"></span>Coming Soon</span>
+          <span class="p-emoji"><i data-feather="sun"></i></span>
+          <h3>AgriSense — Smart Farm Management</h3>
+          <p>IoT-connected farm monitoring, crop cycle planning, yield analytics, and supply chain coordination for
+            modern agriculture.</p>
+          <div class="p-tags"><span class="p-tag">Agriculture</span><span class="p-tag">IoT</span><span
+              class="p-tag">2027</span></div>
+        </div>
+
+        <!-- COMMUNITY IDEA -->
+        <div class="prod-card reveal" data-status="idea">
+          <span class="p-status s-idea"><span class="s-dot"></span>Community Idea</span>
+          <span class="p-emoji"><i data-feather="zap"></i></span>
+          <h3>Your Idea Here</h3>
+          <p>The next product on this page could start with your problem. Submit your idea below and become part of what
+            we build next — your name will be on it.</p>
+          <a class="p-link" href="#submit" style="color:#B090F0">Submit an idea <span>→</span></a>
+        </div>
+      </div>
+      <p class="coming-note reveal">New products are added continuously. Every product starts as an idea from someone
+        like you.</p>
+    </div>
+  </section>
+
+  <div class="divider" style="background:rgba(248,245,240,.07)"></div>
+
+  <!-- ████ DEPLOYMENT PATH ████ -->
+  <section id="deployment">
+    <div class="container">
+      <div class="deploy-hdr reveal">
+        <span class="label">// Deployment Path</span>
+        <h2 class="h-section">From your idea to a live product</h2>
+        <p class="sub">Exactly how we turn a problem you present into a reliable, deployed system — and how your
+          contribution stays recognised forever.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="t-line"></div>
+
+        <div class="t-step reveal">
+          <div class="t-num">01</div>
+          <div class="t-body">
+            <div class="t-phase">// You begin here</div>
+            <h3>Submit Your Problem or Idea</h3>
+            <p>Use our submission form to describe a real challenge you face, a gap you notice, or an app you believe
+              the world needs. No technical knowledge required — plain language is fine. We read every submission
+              personally.</p>
+            <ul>
+              <li>Describe the problem in your own words</li>
+              <li>Tell us who it affects and how often</li>
+              <li>Share ideas you have — or none at all</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-step reveal">
+          <div class="t-num">02</div>
+          <div class="t-body">
+            <div class="t-phase">// We assess</div>
+            <h3>Research, Validation &amp; Scoping</h3>
+            <p>Our team researches the problem space, validates feasibility, and designs a solution approach. We
+              evaluate whether this becomes a custom build for you or a shared product for many. Follow-up questions may
+              be asked.</p>
+            <ul>
+              <li>Market &amp; domain research</li>
+              <li>Technical feasibility analysis</li>
+              <li>Scope and resource estimation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-step reveal">
+          <div class="t-num">03</div>
+          <div class="t-body">
+            <div class="t-phase">// We design</div>
+            <h3>UI/UX Design &amp; System Blueprint</h3>
+            <p>We prototype the interface and map the architecture before writing any production code. Clean,
+              purposeful, minimal. Idea Presenters may be invited to review early mockups and provide feedback.</p>
+            <ul>
+              <li>Wireframes and interaction design</li>
+              <li>Database and API architecture</li>
+              <li>Security and scalability planning</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-step reveal">
+          <div class="t-num">04</div>
+          <div class="t-body">
+            <div class="t-phase">// We build</div>
+            <h3>Engineering &amp; Development</h3>
+            <p>Our engineers build using modern, battle-tested technologies across agile development cycles with
+              structured code reviews and quality gates at every sprint. Reliability is non-negotiable from day one.</p>
+            <ul>
+              <li>Agile sprints with milestone reviews</li>
+              <li>Code review and automated testing</li>
+              <li>Continuous integration pipeline</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-step reveal">
+          <div class="t-num">05</div>
+          <div class="t-body">
+            <div class="t-phase">// We test</div>
+            <h3>QA, Security Audit &amp; Beta Release</h3>
+            <p>The system is rigorously tested — functional, performance, and security. A closed beta is released to
+              early users for real-world feedback. All critical issues are resolved before any public launch.</p>
+            <ul>
+              <li>Automated and manual QA</li>
+              <li>Security and penetration review</li>
+              <li>Load and stress testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="t-step reveal">
+          <div class="t-num">06</div>
+          <div class="t-body">
+            <div class="t-phase">// We launch</div>
+            <h3>Public Launch &amp; Continuous Improvement</h3>
+            <p>The product goes live. We monitor, support users, and iterate based on real data. The system grows and
+              improves continuously — this is never a one-time delivery.</p>
+            <ul>
+              <li>Monitored production deployment</li>
+              <li>User onboarding and documentation</li>
+              <li>Rolling post-launch improvements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="credit-card reveal">
+        <div class="credit-badge-wrap">
+          <div class="credit-badge" aria-hidden="true"><i data-feather="award"></i></div>
+        </div>
+        <div class="credit-content">
+          <h4>You will be permanently credited as Idea Presenter</h4>
+          <p>When a product is built from a community submission, the person who submitted the original idea is
+            permanently recognised as the <strong>Idea Presenter</strong> on the product's public page. Your name or
+            chosen alias will appear in our product credits, launch announcements, the About section, and our company
+            changelog — because great software starts with the people who see the problems first.</p>
+          <div class="credit-tags">
+            <span class="c-tag"><i data-feather="bookmark"></i>Product Credits Page</span>
+            <span class="c-tag"><i data-feather="share-2"></i>Launch Announcement</span>
+            <span class="c-tag"><i data-feather="file-text"></i>About Section</span>
+            <span class="c-tag"><i data-feather="rss"></i>Changelog Entry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ████ PRICING ████ -->
+  <section id="pricing">
+    <div class="container">
+      <div class="price-hdr reveal">
+        <span class="label">// Pricing</span>
+        <h2 class="h-section">Simple, honest pricing</h2>
+        <p class="sub">Clear plans for common needs. Complex projects get a custom quote — because your system deserves
+          a price built for it, not around it.</p>
+        <div class="price-toggle">
+          <button class="active" id="tog-once" onclick="toggleBilling('once')">One-time</button>
+          <button id="tog-monthly" onclick="toggleBilling('monthly')">Monthly Retainer</button>
+        </div>
+      </div>
+
+      <div class="price-grid">
+        <div class="pc reveal">
+          <div class="pc-name">Starter</div>
+          <div class="pc-amt" id="p1-amt">$499<sub>one-time</sub></div>
+          <p class="pc-desc" id="p1-desc">For individuals and small businesses needing a clean, focused landing page or
+            promotional micro-site to establish their online presence.</p>
+          <ul class="pc-feats">
+            <li class="pc-feat">Landing page / promotional site</li>
+            <li class="pc-feat">Up to 5 sections or pages</li>
+            <li class="pc-feat">Mobile-responsive design</li>
+            <li class="pc-feat">Contact form &amp; basic SEO setup</li>
+            <li class="pc-feat">2 rounds of revisions included</li>
+            <li class="pc-feat">30-day post-launch support</li>
+          </ul>
+          <button class="pc-btn pc-btn-o"
+            onclick="document.getElementById('submit').scrollIntoView({behavior:'smooth'})">Get Started</button>
+        </div>
+
+        <div class="pc featured reveal">
+          <div class="feat-pill">Most Popular</div>
+          <div class="pc-name">Custom App</div>
+          <div class="pc-amt">Custom<sub>quote</sub></div>
+          <p class="pc-desc">A full-featured web or mobile application — auth, dashboards, data management, workflows —
+            tailored to your exact business logic and scale.</p>
+          <ul class="pc-feats">
+            <li class="pc-feat">Full custom web or mobile app</li>
+            <li class="pc-feat">User auth &amp; role management</li>
+            <li class="pc-feat">Database design &amp; REST/GraphQL API</li>
+            <li class="pc-feat">Admin dashboard &amp; analytics</li>
+            <li class="pc-feat">Third-party integrations</li>
+            <li class="pc-feat">QA, performance &amp; security testing</li>
+            <li class="pc-feat">3 months post-launch support</li>
+          </ul>
+          <button class="pc-btn pc-btn-f"
+            onclick="document.getElementById('submit').scrollIntoView({behavior:'smooth'})">Get a Custom Quote</button>
+        </div>
+
+        <div class="pc reveal">
+          <div class="pc-name">Enterprise System</div>
+          <div class="pc-amt">Custom<sub>scoped</sub></div>
+          <p class="pc-desc">End-to-end enterprise platforms — multi-tenant architecture, complex integrations,
+            compliance, and a dedicated long-term partnership.</p>
+          <ul class="pc-feats">
+            <li class="pc-feat">Enterprise-scale architecture</li>
+            <li class="pc-feat">Multi-tenant / white-label SaaS</li>
+            <li class="pc-feat">Compliance &amp; security audit</li>
+            <li class="pc-feat">Legacy system integration</li>
+            <li class="pc-feat">DevOps &amp; CI/CD pipeline setup</li>
+            <li class="pc-feat">Dedicated project team</li>
+            <li class="pc-feat">Long-term partnership SLA</li>
+          </ul>
+          <button class="pc-btn pc-btn-o"
+            onclick="document.getElementById('submit').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
+        </div>
+      </div>
+      <p class="price-note reveal">Pricing for custom apps &amp; enterprise systems depends on complexity, integrations,
+        and timeline.<br>Let's have an honest conversation — no commitment, no pressure, no sales pitch.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ████ SUBMIT ████ -->
+  <section id="submit">
+    <div class="container">
+      <div class="sub-grid">
+        <div class="sub-left reveal">
+          <span class="label">// Submit Your Idea</span>
+          <div class="sub-head">
+            <div class="sub-head-ico" aria-hidden="true"><i data-feather="send"></i></div>
+            <h2 class="h-section">Have a problem or idea? Tell us.</h2>
+          </div>
+          <p class="sub">You don't need to be a developer. You just need to see the gap. We'll handle the rest — and
+            credit you for it.</p>
+          <div class="sub-perks">
+            <div class="perk">
+              <div class="perk-ico"><i data-feather="zap"></i></div>Ideas can become real products used by thousands
+            </div>
+            <div class="perk">
+              <div class="perk-ico perk-ico--credit"><i data-feather="award"></i></div>Idea Presenters are permanently
+              credited on every launch
+            </div>
+            <div class="perk">
+              <div class="perk-ico"><i data-feather="lock"></i></div>Your submission is private and fully confidential
+            </div>
+            <div class="perk">
+              <div class="perk-ico"><i data-feather="message-circle"></i></div>We respond to every serious inquiry within 48 hours
+            </div>
+            <div class="perk">
+              <div class="perk-ico"><i data-feather="users"></i></div>No obligation — exploring is always free
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="form-wrap">
+            <div class="form-title">Share your problem or idea</div>
+            <div class="form-sub">Fill in what you can — we'll figure out the rest together.</div>
+
+            <div class="success-msg" id="success-msg">
+              ✅ &nbsp;<strong>Received!</strong> — We'll be in touch within 48 hours.
+            </div>
+
+            <div class="f-form" id="idea-form">
+              <div class="f-row">
+                <div class="field">
+                  <label>Full Name *</label>
+                  <input type="text" id="f-name" placeholder="Your name">
+                </div>
+                <div class="field">
+                  <label>Email Address *</label>
+                  <input type="email" id="f-email" placeholder="you@email.com">
+                </div>
+              </div>
+              <div class="field">
+                <label>Submission Type *</label>
+                <select id="f-type">
+                  <option value="">Select type...</option>
+                  <option value="idea">💡 App Idea — I have a concept for a product</option>
+                  <option value="problem">Business Problem — I need a custom solution</option>
+                  <option value="project">📋 Full Project — I have detailed requirements</option>
+                  <option value="collab">🤝 Collaboration — I want to partner with OneSphere</option>
+                </select>
+              </div>
+              <div class="f-row">
+                <div class="field">
+                  <label>Industry / Domain</label>
+                  <input type="text" id="f-industry" placeholder="e.g. Healthcare, Logistics…">
+                </div>
+                <div class="field">
+                  <label>Country / Region</label>
+                  <input type="text" id="f-region" placeholder="e.g. East Africa, UK, SE Asia">
+                </div>
+              </div>
+              <div class="field">
+                <label>Describe Your Problem or Idea *</label>
+                <textarea id="f-desc"
+                  placeholder="Tell us what problem you face, what solution you imagine, or what system you need. Be as specific or as vague as you need — we'll work through it together."></textarea>
+                <span class="char-hint" id="char-count">0 / 1000 characters</span>
+              </div>
+              <div class="f-row">
+                <div class="field">
+                  <label>Estimated Timeline</label>
+                  <select>
+                    <option>No preference</option>
+                    <option>ASAP</option>
+                    <option>1–2 months</option>
+                    <option>3–6 months</option>
+                    <option>6+ months</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Budget Range</label>
+                  <select>
+                    <option>Not sure yet</option>
+                    <option>Under $1,000</option>
+                    <option>$1,000 – $5,000</option>
+                    <option>$5,000 – $20,000</option>
+                    <option>$20,000+</option>
+                    <option>Open to discussion</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label>How did you hear about us?</label>
+                <select>
+                  <option value="">Select...</option>
+                  <option>Search Engine</option>
+                  <option>Social Media</option>
+                  <option>Word of Mouth</option>
+                  <option>Used one of our products</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="submit-row">
+                <button class="btn btn-green" onclick="submitForm()">Submit Your Idea →</button>
+                <span class="submit-note">🔒 Private &amp; confidential</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ████ TESTIMONIALS ████ -->
+  <section id="trust">
+    <div class="container">
+      <div class="trust-hdr reveal">
+        <span class="label">// What People Say</span>
+        <h2 class="h-section">Trusted by real teams</h2>
+        <p class="sub">From clinics to farms, logistics hubs to classrooms — here's what our partners say.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="tc reveal">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-q">"SphereDesk replaced four different tools we were using. Our operations team was up and
+            running in two days. The simplicity is what makes it powerful."</p>
+          <div class="tc-author">
+            <div class="tc-avatar" style="background:linear-gradient(135deg,var(--green),var(--blue))">AM</div>
+            <div>
+              <div class="tc-name">Amira M.</div>
+              <div class="tc-role">Operations Director, NexGen Logistics</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-q">"I submitted an idea for CareLink because our clinic was struggling with paper records. Seeing
+            it become a real product — with my name in the credits — was extraordinary."</p>
+          <div class="tc-author">
+            <div class="tc-avatar" style="background:linear-gradient(135deg,var(--amber),#E07050)">DK</div>
+            <div>
+              <div class="tc-name">Dr. Daniel K.</div>
+              <div class="tc-role">Idea Presenter · CareLink</div>
+            </div>
+          </div>
+        </div>
+        <div class="tc reveal">
+          <div class="tc-stars">★★★★★</div>
+          <p class="tc-q">"The team built FieldTrack exactly as I described my problem. They asked the right questions,
+            pushed back on unnecessary complexity, and delivered something better than I imagined."</p>
+          <div class="tc-author">
+            <div class="tc-avatar" style="background:linear-gradient(135deg,var(--violet),#9060C0)">SR</div>
+            <div>
+              <div class="tc-name">Samuel R.</div>
+              <div class="tc-role">Founder, UrbanRetail Co.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ████ CONTACT ████ -->
+  <section id="contact">
+    <div class="container">
+      <span class="label">// Contact</span>
+      <h2 class="h-section">Start a conversation</h2>
+      <p class="sub">No sales scripts. No pressure. Just an honest conversation about what you need and how we can help.
+      </p>
+
+      <div class="c-cards">
+        <div class="c-card reveal">
+          <span class="c-icon"><i data-feather="mail"></i></span>
+          <div class="c-lbl">Email</div>
+          <div class="c-val">hello@onesphere.tech</div>
+        </div>
+        <div class="c-card reveal">
+          <span class="c-icon"><i data-feather="map-pin"></i></span>
+          <div class="c-lbl">Base</div>
+          <div class="c-val">Remote-first · Global delivery</div>
+        </div>
+        <div class="c-card reveal">
+          <span class="c-icon"><i data-feather="clock"></i></span>
+          <div class="c-lbl">Response Time</div>
+          <div class="c-val">Within 48 hours</div>
+        </div>
+      </div>
+
+      <div class="c-cta reveal">
+        <a href="mailto:hello@onesphere.tech" class="btn-c-primary">Start a Conversation →</a>
+        <a href="#submit" class="btn-c-ghost">Submit an Idea</a>
+      </div>
+
+      <div class="c-social reveal">
+        <a class="s-btn" href="#" title="Twitter / X"><i data-feather="twitter"></i></a>
+        <a class="s-btn" href="#" title="LinkedIn"><i data-feather="linkedin"></i></a>
+        <a class="s-btn" href="#" title="GitHub"><i data-feather="github"></i></a>
+        <a class="s-btn" href="#" title="Instagram"><i data-feather="instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ████ FOOTER ████ -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <div class="logo-sphere"></div>
+          OneSphere Technologies
+        </a>
+        <p class="footer-mission">We build reliable, simple, problem-solving software for any industry. Every problem
+          deserves a solution — and every idea deserves to be heard.</p>
+        <div class="footer-badge"><span
+            style="width:6px;height:6px;border-radius:50%;background:#5CE0A0;display:inline-block"></span>All systems
+          online</div>
+      </div>
+      <div class="f-col">
+        <div class="f-col-ttl">Company</div>
+        <a href="#mission">Our Mission</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#products">Products</a>
+        <a href="#deployment">Our Process</a>
+        <a href="#trust">Testimonials</a>
+      </div>
+      <div class="f-col">
+        <div class="f-col-ttl">Build</div>
+        <a href="#submit">Submit an Idea</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#submit">Custom Project</a>
+        <a href="#submit">Partnerships</a>
+      </div>
+      <div class="f-col">
+        <div class="f-col-ttl">Social</div>
+        <a href="#">Twitter / X</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+        <a href="#">Instagram</a>
+        <a href="#">Newsletter</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OneSphere Technologies. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
